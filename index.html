@@ -15,11 +15,11 @@
     <title>Reservia</title>
   </head>
 
-<body>
-  <header class="header-container">
+<body class="main-container">
+  <header class="tete">
    <div class="logo">
      <a href="index.html" title="Reservia logo">
-     <img src="images/logos/Reservia.svg" width="180"></a>
+     <img src="images/logos/Reservia.svg"></a>
    </div>
    <nav>
      <ul>
@@ -30,34 +30,36 @@
    </nav>
   </header>
 
+  
   <main>
-    <div class="full">
-      <span>Trouvez votre hébergement pour des vacances de rêve</span>
-      <div class="sbox">
-        <button class="sboxbutton">
-          <i class="fas fa-search icon-btn"></i>
-        </button>
-        <input type="text" placeholder="Marseille" class="sboxinput">
-        <button>rechercher</button>
-      </div>
-      <div class="filter">        
-            <a class="btn" href="#">
-            <i class="fas fa-money-bill-wave"></i>
-            économique
-            </a>  
-            <a class="btn" href="#">
-            <i class="fas fa-heart"></i>
-            Romantique
-            <a class="btn" href="#">
-            <i class="fas fa-child"></i>
-            Famillial
-            </a>
-            <a class="btn" href="#">
-            <i class="fas fa-dog"></i>
-            Animaux autorisés
-            </a>   
-      </div>
-      <div class="flex-container">
+      <div class="flex-container-column">
+        <span>Trouvez votre hébergement pour des vacances de rêve</span>
+        <div class="sbox">
+          <button class="sboxbutton">
+            <i class="fas fa-search icon-btn"></i>
+          </button>
+          <input type="text" placeholder="Marseille" class="sboxinput"></input>
+          <button>rechercher</button>
+        </div>
+        <div class="filter">        
+              <a class="btn" href="#">
+              <i class="fas fa-money-bill-wave"></i>
+              économique
+              </a>  
+              <a class="btn" href="#">
+              <i class="fas fa-heart"></i>
+              Romantique
+              <a class="btn" href="#">
+              <i class="fas fa-child"></i>
+              Famillial
+              </a>
+              <a class="btn" href="#">
+              <i class="fas fa-dog"></i>
+              Animaux autorisés
+              </a>   
+        </div>
+      </div>  
+      <div class="flex-container-column">
         <div class="heb">
           <div class="lineheb">
             <a href="#">Auberge la Cannebière</a>
@@ -71,7 +73,12 @@
           </div>
         </div>
         <div class="pop">
+          <div class="colpop">
+            <a href="#">Hôtel Le soleil du matin</a>
+            <a href="#">Au coeur de l'eau Chambres d'hôtes</a>
+            <a href="#">Hotel tout bleu et blanc</a>
         </div>
+        
       </div>
      </div>
   </main>
