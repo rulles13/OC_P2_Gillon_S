@@ -86,13 +86,6 @@ li a:hover {
 	font-size: 16px;
 	font-weight: bold; 
 }
-/*
-
-
-.icon-btn {
-	    padding: 1px;
-	    border-color: blue;
-	}
 
 /* Filter switch buttons look */
 .filter_box{
@@ -116,16 +109,59 @@ li a:hover {
 } 
 .filter_text{
 	margin-left: 10px;
-	te
 } 
+/* card */
+      .card{
+      	height:175px;
+  		width:240px;
+  		display: flex;
+  		flex-grow: 2;
+  		flex-direction: column;
+  		border-radius: 20px;
+  		background: white;
+  		margin: 10px;
+      }
+      .img_card{ 	
+      	width: 100%;
+      	height: 55%;  	
+ 		margin: : 5px;
+ 		border-radius: 20px 20px 0 0;
+ 		object-fit: cover;
+      }
+      .text_card{
+      	margin-left: 10px;
+        color: black;
+        font-size: 10px;
+        vertical-align: 
+        }
+       .text_card i{
+       	color: blue;
+       }
+
  /* hébergement */
 .flex-container-column {
 	display: flex;
 	justify-content: space-between;
 	border: 4px solid green;
-	width: 100%;
+
 
 }
+.heb{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	height: 400px;
+	width: 66%;
+	min-width: 780px;
+	padding: 10px;
+}
+.heb_card {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-around;
+	
+}
+
 .flex-container-row {
 	display: flex;
 	align-content: space-between;
@@ -142,26 +178,8 @@ li a:hover {
 	border-radius: 20px;
 	justify-content: center;
 }
-.heb {
-	display: flex;
-	flex-direction: column;
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	height: 400px;
-	width: 66%;
-	margin-bottom: 20px;
-	justify-content: space-between;
-}
-.lineheb {
-	display: flex;
-	border: 1px solid pink;
-	justify-content: space-between;
-}
 
-.lineheb img{
-	width: 50px;
-	height: 100px;
-}
+
 .colpop {
 	display: flex;
 	flex-direction: column;
@@ -184,19 +202,7 @@ li a:hover {
   text-align: center;
   text-decoration: none;
  }
-.lineheb a {
-	display: flex;
-	background: tomato;
-	width: 190px;
-	height: 150px;
-	border-radius: 20px;
-	color: white;
-	font-weight: bold;
-	font-size: 1em;
-	text-align: center;
-	border: 1px solid turquoise;
-	text-decoration: none;
-}
+
 
 /* @media screen and (min-width : 600px) {
  .header-container {
