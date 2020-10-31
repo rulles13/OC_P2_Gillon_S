@@ -13,10 +13,11 @@
 /* page */
 .main-container {
 	width: 100%;
-	max-width: 1300px;
+	max-width: 1440px;
 	margin: auto;
 	border: 3px solid red;
 	font-family: Raleway;
+	padding: 40px;
 }
 
 /* header */
@@ -29,9 +30,11 @@
 }
 /* footer */
 .pied{
-	display: inline-flex;
-	height: 100px;
+	height: 220px;
+	width: 100%;
 	background-color: #F2F2F2;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 /* menu */
 
@@ -46,6 +49,7 @@ header ul li a {
 }
 li a.active {
  color: #0065FC;
+ margin-top: 25px;
  border-top: 2px solid #0065FC;
  font-weight: 300;
 }
@@ -128,12 +132,12 @@ li a:hover {
   		margin: 10px;
       }
       .img_card{ 	
-      	width: 95%;
+      	width: 230px;
       	height: 55%;  	
  		margin: 5px;
- 		border-radius: 20px 20px 0 0;
+ 		border-radius: 15px 15px 0 0;
  		object-fit: cover;
- 		padding: 5px;
+
       }
       .text_card{
       	margin-left: 10px;
@@ -226,12 +230,7 @@ li a:hover {
 	border-radius: 20px 20px 0 0;
 }
 
-.img30pc{
-	height: 30%;
-}
-.img40pc{
-	height: 40%;
-}
+
 /* @media screen and (min-width : 600px) {
  .header-container {
    flex-direction: row;
