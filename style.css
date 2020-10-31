@@ -181,9 +181,9 @@ li a:hover {
 .heb{
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	width: 66%;
+	width: 60%;
 	min-width: 780px;
-	padding: 10px;
+	padding: 40px;
 }
 .heb_card {
 	display: flex;
@@ -215,6 +215,7 @@ li a:hover {
 }
 .activite_text{
 	height: 50px;
+	width: 300px;
 	background-color: yellow;
 	vertical-align: center;
 	border-radius: 0 0 20px 20px;
@@ -222,12 +223,14 @@ li a:hover {
 .activite_card {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	width: 100%;
 			
 }
 .activite_img{
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
+	width: 300px;
 }
 
 
