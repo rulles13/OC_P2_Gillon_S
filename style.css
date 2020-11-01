@@ -13,7 +13,7 @@
 /* page */
 .main-container {
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1360px;
 	margin: auto;
 	border: 3px solid red;
 	font-family: Raleway;
@@ -37,24 +37,34 @@
 	padding-right: 40px;
 }
 /* menu */
+ul {display: flex; height: 100%; margin: auto;}
 
-header ul li {
- display: inline-block;
- padding: 0 1.6em 0 0;
+header li {
+ display: flex;
+ margin: 0 0 0 1.6em;
  font-size: 1.3em;
+ text-align: center;
+ list-style: none;
+ height: 100%;
+ align-items: center;
 }
 header ul li a {
+	display: flex;	
  text-decoration: none;
  color: #7D7C7D;
 }
-li a.active {
+header li:active {
+display: flex;
  color: #0065FC;
- margin-top: 25px;
- border-top: 2px solid #0065FC;
  font-weight: 300;
+ border-top: 2px;
 }
 li a:hover {
  color: #B6B6B6;
+}
+nav{
+	display: flex;
+	height: 100%;
 }
 /* search area*/
 .css-button {
@@ -204,14 +214,13 @@ li a:hover {
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
+	flex-wrap: wrap;
 }
 .activite_col{
-	display: inline-flex;
+	display:flex;
 	align-content: space-between;
 	width: 300px;
 	flex-direction: column;
-	flex: 2;
-	margin: auto;
 }
 .activite_text{
 	height: 50px;
@@ -239,7 +248,7 @@ li a:hover {
    flex-direction: row;
    justify-content: space-between;
  }
- .logo {
+ .logo {g
    margin-left: 2em;
  }
  nav {
