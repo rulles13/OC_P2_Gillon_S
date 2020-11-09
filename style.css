@@ -16,7 +16,7 @@ h4{
 }
 h3{
 	margin-block-start: 40px;
-	    margin-block-end: -20px;
+	margin-block-end: -20px;
 }
 .titre_1_5_em{
 	display: flex;
@@ -27,6 +27,8 @@ h3{
 }
 /* page */
 .main-container {
+	display: flex;
+	flex-direction: column;
 	max-width: 1440px;
 	margin: auto;
 	font-family: Raleway;
@@ -112,11 +114,14 @@ li:hover{
 .css-button > span {
 	display: block;
 }
+.css-logo-search {
+	visibility: hidden;
+	}
 .css-button-icon {
 	background: var(--grisc);
 	padding: 10px 10px;
 	border-radius: 15px 0 0 15px;
-	
+	width: 40px;
 }
 .css-button-text {
 	padding: 10px 10px;
@@ -125,6 +130,7 @@ li:hover{
 	color: white;
 	text-decoration: none;
 }
+
 
 .css-write-area {
 	padding: 10px 10px;
@@ -179,6 +185,7 @@ li:hover{
 	display: flex;
 	max-width: 1360px;
 	height: 100%;
+	margin: auto;
 
 
 }
@@ -287,7 +294,6 @@ li:hover{
 	justify-content: space-between;
 	width: 300px;
 	flex-direction: column;
-	margin: 0 20px;
 }
 .activite_text{
 	display: flex;
@@ -330,7 +336,7 @@ li:hover{
 	width: 33%;
 	line-height: 2em;
 }
-/*-------------------------------------------------------------------------------------------*/
+/*---------------------------------------------Tablette----------------------------------------------*/
 @media screen and (max-width : 1024px) {
 .main-container {
 	max-width: 768px;
@@ -341,6 +347,19 @@ li:hover{
 	}	
 
 
+.css-logo-search {
+	visibility: visible;
+    padding: 13px 7px 6px 7px;
+    width: 40px;
+    height: 23px;
+    background: var(--bleuf);
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+
+.css-button-text{
+	display: none;
+}
 .activite{
 	max-width:1024px;
 	display: flex;
@@ -348,7 +367,7 @@ li:hover{
 	flex-wrap: wrap;
 	margin:auto;}
 }
-/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------Smart phone-----------------------------------------------*/
 @media screen and (max-width : 667px) {
 .main-container{
  	max-width: 400px;
