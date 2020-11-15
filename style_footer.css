@@ -1,0 +1,44 @@
+
+/* footer */
+.pied{
+	font-family: Raleway;
+	height: 220px;
+	width: 100%;
+	background-color: var(--grisc);
+}
+.cont_text{
+	display: flex;
+	max-width: 1360px;
+	width: 100%;
+	margin-left: 40px;
+}
+.pied_texte{
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	line-height: 2em;
+}
+/*---------------------------------------------Tablette----------------------------------------------*/
+@media screen and (max-width : 1024px) {
+
+/*-----------------------------------------------Smart phone-----------------------------------------------*/
+@media screen and (max-width : 667px) {
+
+	.pied{
+		font-family: Raleway;
+		height: auto;
+		width: 100%;
+		background-color: var(--grisc);
+	}
+	.cont_text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 450px;
+		margin: auto;
+	}
+	.pied_texte{
+		flex-direction: column;
+		width: 100%;
+	}
+} 
