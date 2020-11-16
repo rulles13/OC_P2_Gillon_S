@@ -1,0 +1,257 @@
+
+* {
+	box-sizing: border-box;
+}
+/* colors and fonts */
+:root {
+	--bleuf : #0065FC ;
+	--bleuc : #DEEBFF ;
+	--grisc : #F2F2F2 ;
+	--grism : #D3D3D3 ;
+}
+ 
+ @font-face {
+    font-family: 'Raleway';
+    src: url('polices/Raleway-VariableFont_wght.ttf') format('truetype');
+	}
+h1{
+	display: flex;
+    font-size: 1.5em;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+h3{
+	margin-block-start: 40px;
+	margin-block-end: -20px;
+}
+h4{
+	margin-block-end: -10px;
+    margin-block-start: 0;
+}
+/* page */
+.main-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	margin: auto;
+	font-family: Raleway;
+	background-color: pink;
+}
+.top_container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 40px;
+}
+
+.header{
+	display: flex;
+  	align-items: center;
+  	height: 70px;
+  	position: relative;
+}
+/* header */
+.logo{
+	position: relative;
+	left: 40px;
+}
+
+.villenature{
+	display: flex;
+    height: 30px;
+}
+.cercle{
+	border: 2px solid var(--grisc);
+    border-radius: 20px;
+    text-align: center;
+    width: 22px;
+    color: var(--bleuf);
+    margin-right: 10px;
+}
+.plus500{
+    display: flex;
+    height: 30px;
+    margin: 10px 0 30px 0;
+    align-items: center;
+}
+
+/* menu */
+	.header{
+		display: flex;
+		height: 70px;
+		width: 100%;
+		border: 3px solid red;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.logo{
+		position: absolute;
+		left: 40px;
+		border: 3px solid green;
+	}
+	.menu_general{
+		display: flex;
+    	
+    	
+    	border: 3px solid orange;
+	}
+	.menu_hebergement_activite{
+		display: flex;
+		border: 3px solid cyan;
+	}
+	.menu{
+		color: var(--bleuf);
+		display: flex;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: 600;
+		width: 200px;
+		height: 70px;
+		border: 1px solid black;
+		align-items: center;
+		justify-content: center;
+	}
+	.menu:hover{
+		color: red;
+	}
+/* search area*/
+.css-button {
+	font-size: 1.1em;
+	border-radius: 15px;
+	color: black;
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+	display: inline-flex;
+	justify-content: right;
+	align-items: center;
+	height: 30px;
+	margin: 20px 0;
+}
+.css-button-text:hover {
+	background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
+}
+
+.css-button > span {
+	display: block;
+}
+.css-logo-search {
+	visibility: hidden;
+	}
+.css-button-icon {
+	background: var(--grisc);
+	padding: 10px 10px;
+	border-radius: 15px 0 0 15px;
+	width: 40px;
+}
+.css-button-text {
+	padding: 10px 10px;
+	background: var(--bleuf);
+	border-radius:0 15px 15px 0;
+	color: white;
+	text-decoration: none;
+}
+
+
+.css-write-area {
+	padding: 10px 10px;
+	color: black;
+	font-size: 16px;
+	font-weight: bold; 
+}
+
+/* Filter switch buttons look */
+.filter{
+	font-weight: 700;
+}
+.filter_box{
+      	display: inline-flex;
+      	background-color: white;
+      	height: 40px;
+      	border-radius: 40px;
+      	border: 2px solid var(--grisc);
+      	padding: 5px;
+      	margin: 20px 10px;
+		align-items: center;
+		text-decoration: none;
+}
+.filter_box:hover{
+		background-color: var(--bleuf);
+		color: white;
+}
+.filter i{
+	color: var(--bleuf);
+	padding: 13px 0 0 0px;
+}
+.rond {
+	background-color: var(--bleuc);
+    border-radius: 40px;
+    margin: -6px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+} 
+.filter_text{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: 800;
+	    color: black;
+}
+
+
+
+
+/*---------------------------------------------Tablette----------------------------------------------*/
+@media screen and (max-width : 1060px) {
+	.main-container{
+		max-width: 964px;
+		margin: auto;
+		font-family: Raleway;
+		padding:0px;
+		background-color: blue;
+	}	
+	.header{
+		max-width: 768px;
+		position: relative;
+		right: 0;
+	}
+	.css-logo-search{
+		visibility: visible;
+	    padding: 13px 7px 6px 7px;
+	    width: 40px;
+	    height: 42px;
+	    background: var(--bleuf);
+	    border-radius: 0 15px 15px 0;
+	    color: white;
+	}
+	.css-button-text{
+		display: none;
+	}
+	.activite{
+		max-width:1024px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin:auto;
+	}
+}
+/*-----------------------------------------------Smart phone-----------------------------------------------*/
+@media screen and (max-width : 667px) {
+	.main-container{
+	    min-width: 400px;
+	 	max-width: 660px;
+		margin: auto;
+		padding: 0;
+		background-color: purple;
+	}
+
+	
+
+
+	.flex-container-column {
+	    flex-direction: column-reverse;
+	}
+	.cercle {
+		width: 35px;
+	}
+}
