@@ -80,27 +80,21 @@ h4{
 		display: flex;
 		height: 70px;
 		width: 100%;
-		border: 3px solid red;
 		justify-content: flex-end;
 		align-items: center;
 	}
 	.logo{
 		position: absolute;
 		left: 40px;
-		border: 3px solid green;
-	}
+		}
 	.menu_general{
 		display: flex;
-    	
-    	
-    	border: 3px solid orange;
 	}
 	.menu_hebergement_activite{
 		display: flex;
-		border: 3px solid cyan;
 	}
 	.menu{
-		color: var(--bleuf);
+		color: var(--grisf);
 		display: flex;
 		text-decoration: none;
 		font-size: 16px;
@@ -112,7 +106,9 @@ h4{
 		justify-content: center;
 	}
 	.menu:hover{
-		color: red;
+		color: var(--bleuf);
+		margin-top: 3px solid var(--bleuf);
+
 	}
 /* search area*/
 .css-button {
@@ -209,11 +205,7 @@ h4{
 		font-family: Raleway;
 		padding:0px;
 		background-color: blue;
-	}	
-	.header{
-		max-width: 768px;
-		position: relative;
-		right: 0;
+
 	}
 	.css-logo-search{
 		visibility: visible;
@@ -245,8 +237,17 @@ h4{
 		background-color: purple;
 	}
 
-	
-
+	.menu_general{
+		flex-direction: column-reverse;
+    	width: 100%
+	}
+	.menu{
+		width: 50%;
+	}
+	.menu:hover{
+		color: red;
+		border-bottom: 5px solid yellow;
+	}
 
 	.flex-container-column {
 	    flex-direction: column-reverse;
