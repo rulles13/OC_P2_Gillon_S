@@ -1,5 +1,3 @@
-
-
 .container_heb_and_pop {
 	display: flex;
 	justify-content: space-between;
@@ -32,6 +30,7 @@
   		background: white;
   		box-shadow: 3px 9px 6px var(--grism);
       	}
+  
    .heb_image{ 	
       	width: 100%;
       	height: 115px;  	
@@ -48,6 +47,7 @@
         height: 75px;
         flex-wrap: wrap;
         justify-content: space-between;
+        text-decoration: none;
         }
     .etoiles{
         display: flex;
@@ -111,7 +111,9 @@
 /* activité */
 .titre_activite{
 	display: flex;
-	margin-left: 40px;
+    margin-left: 40px;
+    margin: auto;
+    max-width: 1360px;
 }
 
 .activite{
@@ -196,10 +198,10 @@
 		border-radius: 20px 20px 0 0;
 	}
 	.pop_text_card{
-    margin-left: 10px;
-    height: 75px;
-    padding: 0;
-    width: 90%; 
+    	margin-left: 10px;
+    	height: 75px;
+    	padding: 0;
+    	width: 90%; 
 	}
 /*------------------- activité -----------------------------------*/	
 	.activite{
@@ -212,7 +214,7 @@
 	}
 	.activite_col{
 		width: 32%;
-		max-width: 260px;
+		min-width: 50px;
 	}
 	.colone4{
 		display: none;
@@ -223,34 +225,58 @@
 
 	.cont_pop_card{
 		flex-direction: column;
+		align-items: center;
 	}
 	.cont_pop{
-	    width: 100%;
+	    width: 375px;
 	    border-radius: 0;
 	    align-items: center;
 	    flex-direction: column;
 	    background-color: var(--grisc);
+	    margin: auto;
+	    padding: 0 15px;
 	}
+	.pop_card{
+		flex-direction: row;
+      	height: 150px;
+      	width: 100%;
+    }
+    .pop_image{
+    	width: 35%;
+    	height: 100%;
+    	border-radius: 20px 0 0 20px;
+    }
+    .pop_text_card{
+    	height: 100%;
+    	width: 60%;
+    	padding: 15px 10px;
+    }
 	.heb{
 	    background-color: white;
 	    border-radius: 0;
-	    width: 400px;
+	    width: 375px;
 	    padding: 0 15px;
+	    margin: auto;
 	}
 	.heb_card{
 	    height: 190px;
 	    width: 345px;
 	}
-	.heb_image{
-		width: 335px;
-	}
+	
 	.heb_text_card{
-		height: 55px;
+		height: 65px;
 	}
-
+	.titre_activite {
+    display: flex;
+    width: 345px;
+    margin: auto;
+}
+	.colone4{
+		display: block;
+	}
 	.activite_col{
-		display:flex;	
-		flex-direction: column;
+		max-width: none;
+		margin: auto;
 		width: 345px;
 	}
 	.activite_img{
