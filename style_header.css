@@ -29,7 +29,7 @@ h4{
 	margin-block-end: -10px;
     margin-block-start: 0;
 }
-.gras{
+.bold{
 	font-size: 1.0em;
 	font-weight: 700;
 }
@@ -54,10 +54,6 @@ a {
     max-width: 1360px;
 }
 /* header */
-.logo{
-	position: relative;
-	left: 40px;
-}
 
 .villenature{
 	display: flex;
@@ -83,14 +79,14 @@ a {
 		display: flex;
 		height: 70px;
 		width: 100%;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: center;
 		max-width: 1360px;
 	}
 	.logo{
-		position: absolute;
-		left: 40px;
-		}
+		display: flex;
+    	margin-left: 40px;
+	}
 	.menu_general{
 		display: flex;
 	}
@@ -254,6 +250,9 @@ a {
 	.menu_general{
 		flex-direction: column-reverse;
     	width: 100%;
+	}
+	.menu_hebergement_activité{
+		width: 100%
 	}
 	.menu{
 		width: 50%;

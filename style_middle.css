@@ -187,7 +187,7 @@
 		justify-content: space-between;
 	}
 	.pop_card{
-		width: 31%;
+		width: 90%;
 		margin: 0 0 40px 0;
 		flex-direction: column;
 		height: 200px;
