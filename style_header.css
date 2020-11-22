@@ -36,6 +36,7 @@ h4{
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 /* page */
@@ -76,46 +77,46 @@ a {
 
 /* menu */
 	.header{
-		display: flex;
-		height: 70px;
-		width: 100%;
-		justify-content: space-between;
-		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr 140px 140px 140px;
+		grid-template-rows: 70px 5px;
+		grid-template-areas: 	"t1 t2 t3 t4"
+								"u1 u2 u3 u4";
 		max-width: 1360px;
+		align-items: center;
 	}
 	.logo{
-		display: flex;
-    	margin-left: 40px;
+		grid-area: t1;
+		
 	}
-	.menu_general{
-		display: flex;
+	
+	.menu-heb{
+		display: grid;
+		grid-area: t2;
+		justify-content: center;
+		height: 70px;
+    	align-content: center;
 	}
-	.menu_hebergement_activite{
-		display: flex;
+
+
+	.menu-act{
+		display: grid;
+		grid-area: t3;
+		justify-content: center;
+		height: 70px;
+    	align-content: center;
 	}
 	.insc{
+		grid-area: t4;
 		color: var(--bleuf);
 		display: flex;
 		text-decoration: none;
 		font-size: 14px;
 		font-weight: 800;
-		width: 100px;
-		height: 70px;
-		align-items: center;
 		justify-content: center;
 	}
-	.menu{
-		color: var(--grisf);
-		display: flex;
-		text-decoration: none;
-		font-size: 14px;
-		font-weight: 600;
-		width: 160px;
-		height: 70px;
-		align-items: center;
-		justify-content: center;
-	}
-	.menu:hover{
+
+	.menu-heb:hover, .menu-act:hover{
 		color: var(--bleuf);
 		border-top: 2px solid var(--bleuf);
 	}
@@ -238,31 +239,28 @@ a {
 }
 /*-----------------------------------------------Smart phone-----------------------------------------------*/
 @media screen and (max-width : 667px) {
-	.main-container{
-	    min-width: 400px;
-	 	max-width: 660px;
-		margin: auto;
-		padding: 0;
+	
+	.header{		
+		
+		grid-template-columns: 1fr 100px 100px 1fr;
+		grid-template-rows: 40px 35px;
+		grid-template-areas: 	"t1 t2 t3 t4"
+								"u1 u1 u2 u2";
+	
+		}
+	
+	.menu-heb{
+		grid-area: u1;
 	}
-	.header{
-		height: 140px;
-	}
-	.menu_general{
-		flex-direction: column-reverse;
-    	width: 100%;
-	}
-	.menu_hebergement_activité{
-		width: 100%
-	}
-	.menu{
-		width: 50%;
-	}
-	.insc{
-		width: 50%;
+	.menu-act{
+		grid-area: u2;
 	}
 	
-	
-
+	.menu-heb:hover, .menu-act:hover{
+		color: var(--bleuf);
+		border-bottom: 2px solid var(--bleuf);
+		border-top: none;
+	}
 
 
 
