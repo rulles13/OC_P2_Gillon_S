@@ -22,12 +22,12 @@ h1{
     font-weight: 700;
 }
 h3{
-	margin-block-start: 40px;
-	margin-block-end: -20px;
+	margin-top: 40px;
+	margin-bottom: -20px;
 }
 h4{
-	margin-block-end: -10px;
-    margin-block-start: 0;
+	margin-bottom: -10px;
+    margin-top: 0;
 }
 .bold{
 	font-size: 1.0em;
@@ -38,6 +38,7 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
 
 /* page */
 .main-container {
@@ -243,9 +244,10 @@ a {
 	.header{		
 		
 		grid-template-columns: 1fr 100px 100px 1fr;
-		grid-template-rows: 40px 35px;
+		grid-template-rows: 50px 35px;
 		grid-template-areas: 	"t1 t2 t3 t4"
 								"u1 u1 u2 u2";
+		margin-bottom: 20px;
 	
 		}
 	

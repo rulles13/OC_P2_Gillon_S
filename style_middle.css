@@ -114,6 +114,8 @@
     margin-left: 40px;
     margin: auto;
     max-width: 1360px;
+    height: 70px;
+    align-items: center;
 }
 
 .activite{
