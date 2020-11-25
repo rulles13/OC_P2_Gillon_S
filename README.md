@@ -1,6 +1,6 @@
 Formation web développeur OpenClassrooms
 
-Projet numéros 2
+Projet numéro 2
 
 Réalisation d'une page internet à partir d'une maquette.
 
