@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+ 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../polices/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+h1{
+	display: flex;
+    font-size: 1.5em;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+h4{
+	margin-bottom: -10px;
+    margin-top: 0;
+}
+.bold{
+	font-size: 1.0em;
+	font-weight: 700;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* page */
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	margin: auto;
+	font-family: Raleway;
+	padding: 0 40px;
+}
+.container_heb_and_pop {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1360px;
+	margin: auto;
+}
+.etoiles i {
+    color: var(--bleuf);
+}
+:root {
+	--bleuf : #0065FC ;
+	--bleuc : #DEEBFF ;
+	--grisc : #F2F2F2 ;
+	--grism : #D3D3D3 ;
+}
+
+@media screen and (max-width : 1060px) {
+
+/*------------ loupe Vs "rechercher" ---------------------------*/
+	.css-logo-search{
+		visibility: visible;
+	    padding: 13px 7px 6px 7px;
+	    width: 40px;
+	    height: 42px;
+	    background: var(--bleuf);
+	    border-radius: 0 15px 15px 0;
+	    color: white;
+	}
+	.css-button-text{
+		display: none;
+	}
+
+/*------------------- heb et pop ---------------------------------*/
+
+	.container_heb_and_pop{
+	    flex-direction: column-reverse;
+	}
+}
+

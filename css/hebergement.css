@@ -1,0 +1,74 @@
+.heb{
+	background-color: var(--grisc);
+   	border-radius: 20px;
+   	padding: 0 40px;
+   	margin-right: 40px;
+   	max-width: 880px;
+   	width: 70%;
+}
+.cont_heb_card {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+   	grid-gap: 35px;	
+}
+.heb_card{
+   	height:200px;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	background: white;
+	box-shadow: 3px 9px 6px var(--grism);
+}  
+.heb_image{ 	
+   	width: 100%;
+   	height: 115px;  	
+	padding: 5px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+.heb_text_card{
+   	display: flex;
+   	flex-direction: column;
+   	margin-left: 10px;
+    color: black;
+    font-size: 1em;
+    height: 75px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.etoiles{
+    display: flex;
+    letter-spacing: 0.05em;
+}
+
+/*---------------------------------------------Tablette----------------------------------------------*/
+
+@media screen and (max-width : 1060px) {
+
+	.heb{
+		width: 100%;
+		max-width: 1050px;
+	}
+}
+
+/*-----------------------------------------------Smart phone-----------------------------------------------*/
+
+@media screen and (max-width : 667px){
+
+	.heb{
+	    background-color: white;
+	    border-radius: 0;
+	    width: 375px;
+	    padding: 0 15px;
+	    margin: auto;
+	}
+	.heb_card{
+	    height: 190px;
+	    width: 345px;
+	}	
+	.heb_text_card{
+		height: 65px;
+	}
+}

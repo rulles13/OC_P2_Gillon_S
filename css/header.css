@@ -1,60 +1,11 @@
 
-* {
-	box-sizing: border-box;
-}
-/* colors and fonts */
-:root {
-	--bleuf : #0065FC ;
-	--bleuc : #DEEBFF ;
-	--grisc : #F2F2F2 ;
-	--grism : #D3D3D3 ;
-}
- 
- @font-face {
-    font-family: 'Raleway';
-    src: url('polices/Raleway-VariableFont_wght.ttf') format('truetype');
-	}
-h1{
-	display: flex;
-    font-size: 1.5em;
-    margin-top: 13px;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-h3{
-	margin-top: 40px;
-	margin-bottom: -20px;
-}
-h4{
-	margin-bottom: -10px;
-    margin-top: 0;
-}
-.bold{
-	font-size: 1.0em;
-	font-weight: 700;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-}
-
-
-/* page */
-.main-container {
-	display: flex;
-	flex-direction: column;
-	max-width: 1440px;
-	margin: auto;
-	font-family: Raleway;
-}
 .top_container{
 	display: flex;
     flex-direction: column;
-    margin-left: 40px;
     margin: auto;
     max-width: 1360px;
 }
+
 /* header */
 
 .villenature{
@@ -65,7 +16,10 @@ a {
 	border: 2px solid var(--grisc);
     border-radius: 20px;
     text-align: center;
-    width: 22px;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
     color: var(--bleuf);
     margin-right: 10px;
 }
@@ -77,51 +31,48 @@ a {
 }
 
 /* menu */
-	.header{
-		display: grid;
-		grid-template-columns: 1fr 140px 140px 140px;
-		grid-template-rows: 70px 5px;
-		grid-template-areas: 	"t1 t2 t3 t4"
-								"u1 u2 u3 u4";
-		max-width: 1360px;
-		align-items: center;
-	}
-	.logo{
-		grid-area: t1;
-		
-	}
-	
-	.menu-heb{
-		display: grid;
-		grid-area: t2;
-		justify-content: center;
-		height: 70px;
-    	align-content: center;
-	}
 
+.header{
+	display: grid;
+	grid-template-columns: 1fr 140px 140px 140px;
+	grid-template-rows: 70px 5px;
+	grid-template-areas: 	"t1 t2 t3 t4"
+							"u1 u2 u3 u4";
+	align-items: center;
+}
+.logo{
+	grid-area: t1;
+}
+.menu-heb{
+	display: grid;
+	grid-area: t2;
+	justify-content: center;
+	height: 70px;
+   	align-content: center;
+}
+.menu-act{
+	display: grid;
+	grid-area: t3;
+	justify-content: center;
+	height: 70px;
+   	align-content: center;
+}
+.insc{
+	grid-area: t4;
+	color: var(--bleuf);
+	display: flex;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 800;
+	justify-content: center;
+}
+.menu-heb:hover, .menu-act:hover{
+	color: var(--bleuf);
+	border-top: 2px solid var(--bleuf);
+}
 
-	.menu-act{
-		display: grid;
-		grid-area: t3;
-		justify-content: center;
-		height: 70px;
-    	align-content: center;
-	}
-	.insc{
-		grid-area: t4;
-		color: var(--bleuf);
-		display: flex;
-		text-decoration: none;
-		font-size: 14px;
-		font-weight: 800;
-		justify-content: center;
-	}
-
-	.menu-heb:hover, .menu-act:hover{
-		color: var(--bleuf);
-		border-top: 2px solid var(--bleuf);
-	}
 /* search area*/
+
 .css-button {
 	font-size: 1.1em;
 	border-radius: 15px;
@@ -138,13 +89,12 @@ a {
 .css-button-text:hover {
 	background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
 }
-
 .css-button > span {
 	display: block;
 }
 .css-logo-search {
 	visibility: hidden;
-	}
+}
 .css-button-icon {
 	background: var(--grisc);
 	padding: 10px 10px;
@@ -158,8 +108,6 @@ a {
 	color: white;
 	text-decoration: none;
 }
-
-
 .css-write-area {
 	padding: 10px 10px;
 	color: black;
@@ -168,6 +116,7 @@ a {
 }
 
 /* Filter switch buttons look */
+
 .filter{
 	font-weight: 700;
 }
@@ -205,18 +154,14 @@ a {
 	    color: black;
 }
 
-
-
-
 /*---------------------------------------------Tablette----------------------------------------------*/
+
 @media screen and (max-width : 1060px) {
 	.main-container{
 		max-width: 964px;
 		margin: auto;
 		font-family: Raleway;
-		padding:0px;
-
-
+		
 	}
 	.css-logo-search{
 		visibility: visible;
@@ -238,39 +183,33 @@ a {
 		margin:auto;
 	}
 }
+
 /*-----------------------------------------------Smart phone-----------------------------------------------*/
+
 @media screen and (max-width : 667px) {
-	
+	.filtres{
+	display: block;
+	}
 	.header{		
-		
 		grid-template-columns: 1fr 100px 100px 1fr;
 		grid-template-rows: 50px 35px;
 		grid-template-areas: 	"t1 t2 t3 t4"
 								"u1 u1 u2 u2";
 		margin-bottom: 20px;
-	
-		}
-	
+	}
 	.menu-heb{
 		grid-area: u1;
 	}
 	.menu-act{
 		grid-area: u2;
 	}
-	
 	.menu-heb:hover, .menu-act:hover{
 		color: var(--bleuf);
 		border-bottom: 2px solid var(--bleuf);
 		border-top: none;
 	}
-
-
-
 	.flex-container-column {
 	    flex-direction: column-reverse;
-	}
-	.cercle {
-		width: 35px;
 	}
 	.menu:hover{
 		border-bottom: 5px solid var(--bleuf);

@@ -1,0 +1,115 @@
+.pluspop{
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	width: 100%;
+}
+.cont_pop{
+	display: flex;
+	width: 30%;
+	max-width: 420px;
+	min-width: 375px;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--grisc);
+	border-radius: 20px;
+	padding: 0 30px;
+}
+.cont_pop_card{
+	display: flex;
+	flex-direction: column;
+}
+.pop_card{
+  	display: flex;
+   	height: 150px;
+   	width: 100%;  		
+	border-radius: 20px;
+	background: white;
+	margin: 15px 0;
+	box-shadow: 3px 9px 6px var(--grism);
+}    
+.pop_image{ 	
+    width: 35%;
+    height: 100%;	
+ 	padding: 5px;
+ 	border-radius: 20px 0 0 20px;
+ 	object-fit: cover;
+}
+.pop_text_card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    color: black;
+    font-size: 1em;
+    height: 120px;
+    width: 60%;
+    min-width: 165px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*---------------------------------------------Tablette----------------------------------------------*/
+
+@media screen and (max-width : 1060px) {
+
+	.cont_pop{
+		width: 100%;
+	   	max-width: 1060px;
+	   	margin-bottom: 40px;
+	}
+	.cont_pop_card{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.pop_card{
+		width: 90%;
+		margin: 0 0 40px 0;
+		flex-direction: column;
+		height: 200px;
+	}
+	.pop_image{
+		width: 100%;
+		height: 115px;
+		border-radius: 20px 20px 0 0;
+	}
+	.pop_text_card{
+	   	margin-left: 10px;
+	   	height: 75px;
+	   	padding: 0;
+	   	width: 90%; 
+	}
+}
+
+/*-----------------------------------------------Smart phone-----------------------------------------------*/
+
+@media screen and (max-width : 667px){
+
+	.cont_pop_card{
+		flex-direction: column;
+		align-items: center;
+	}
+	.cont_pop{
+	    width: 375px;
+	    border-radius: 0;
+	    align-items: center;
+	    flex-direction: column;
+	    background-color: var(--grisc);
+	    margin: auto;
+	    padding: 0 15px;
+	}
+	.pop_card{
+		flex-direction: row;
+      	height: 150px;
+      	width: 100%;
+    }
+    .pop_image{
+    	width: 35%;
+    	height: 100%;
+    	border-radius: 20px 0 0 20px;
+    }
+    .pop_text_card{
+    	height: 100%;
+    	width: 60%;
+    	padding: 15px 10px;
+    }
+	}
